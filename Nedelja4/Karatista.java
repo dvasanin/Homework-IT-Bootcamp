@@ -3,7 +3,7 @@ package Domaci.Nedelja4;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Karatisti {
+public class Karatista {
 
     private String ime;
     private int godine;
