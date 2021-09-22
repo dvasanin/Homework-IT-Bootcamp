@@ -381,6 +381,9 @@ public class DomaciSreda {
     */
 
     public static boolean anagram(String s1, String s2) {
+        if (s1.length() == s2.length()){
+            return false;
+        }
         s1 = s1.replaceAll(" ", "");
         s2 = s2.replaceAll(" ", "");
         char[] niska1 = s1.toCharArray();
@@ -393,6 +396,6 @@ public class DomaciSreda {
         for (char c : niska2) {
             drvo1.add(c);
         }
-        return drvo.containsAll(drvo1) && s1.length() == s2.length();
+        return drvo.containsAll(drvo1);
     }
 }
